@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrickFrame Studio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d0d0d;
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: black;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #aaa;
+}
+
+/* BUTTON */
+.btn {
+    background: white;
+    color: black;
+    padding: 12px 25px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* PRODUCTS */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.product {
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.03);
+}
+
+.product img {
+    width: 100%;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    margin: 0;
+}
+
+.price {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.badge {
+    color: #00ff88;
+    font-size: 12px;
+}
+
+/* TRUST BAR */
+.trust {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background: black;
+    text-align: center;
+}
+
+.trust div {
+    font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>BrickFrame Studio</h1>
+    <nav>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Premium LEGO Car Displays</h1>
+    <p>Framed. Acrylic Protected. Ready to Hang.</p>
+    <button class="btn">Shop Now</button>
+</section>
+
+<section class="products">
+
+<div class="product">
+    <img src="https://via.placeholder.com/400x500">
+    <div class="product-info">
+        <h3>Ferrari F1 Brick Edition</h3>
+        <p class="badge">LIMITED EDITION</p>
+        <p class="price">£79</p>
+        <p>Museum-quality LEGO artwork printed on premium matte paper, sealed with a crystal-clear acrylic cover and finished with a sleek black frame.</p>
+        <button class="btn">Buy Now</button>
+    </div>
+</div>
+
+<div class="product">
+    <img src="https://via.placeholder.com/400x500">
+    <div class="product-info">
+        <h3>Mercedes AMG Brick Edition</h3>
+        <p class="badge">BEST SELLER</p>
+        <p class="price">£79</p>
+        <p>High-detail LEGO car design with a premium framed finish. Built for car lovers and collectors.</p>
+        <button class="btn">Buy Now</button>
+    </div>
+</div>
+
+<div class="product">
+    <img src="https://via.placeholder.com/400x500">
+    <div class="product-info">
+        <h3>McLaren Speed Brick Edition</h3>
+        <p class="badge">NEW</p>
+        <p class="price">£79</p>
+        <p>Clean, modern LEGO artwork with luxury framing and acrylic protection.</p>
+        <button class="btn">Buy Now</button>
+    </div>
+</div>
+
+</section>
+
+<section class="trust">
+    <div>🚚 Free UK Shipping</div>
+    <div>⭐ Premium Quality</div>
+    <div>🔒 Secure Checkout</div>
+    <div>🎁 Perfect Gift</div>
+</section>
+
+<footer>
+    © 2026 BrickFrame Studio
+</footer>
+
+</body>
+
+</html>
